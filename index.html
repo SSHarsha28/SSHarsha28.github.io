@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #333;
+      --accent: #0077cc;
+    }
+    body.dark {
+      --bg: #121212;
+      --text: #f0f0f0;
+      --accent: #66d9ef;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: background 0.3s, color 0.3s;
+    }
+    header {
+      padding: 1rem 2rem;
+      background: var(--accent);
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: var(--accent);
+    }
+    .project {
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9em;
+    }
+    .toggle-btn {
+      background: #fff;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>Your Name</strong></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button class="toggle-btn" onclick="toggleTheme()">🌓</button>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm a passionate developer interested in web technologies and design. This is my portfolio showcasing some of my work.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project One</h3>
+      <p>Description of your project. <a href="https://github.com/yourusername/project-one" target="_blank">GitHub Repo</a></p>
+    </div>
+    <div class="project">
+      <h3>Project Two</h3>
+      <p>Description of your second project. <a href="https://github.com/yourusername/project-two" target="_blank">GitHub Repo</a></p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me via <a href="mailto:your.email@example.com">email</a> or on <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+
+</body>
+</html>
