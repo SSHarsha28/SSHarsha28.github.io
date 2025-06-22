@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WatchZone | Premium Watch Sales</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #2e2e33;
+      color: #1e1e2f;
+    }
+
+    nav {
+      background-color: #0f172a;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #22d3ee;
+      text-decoration: none;
+    }
+
+    .nav__links {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    .nav__links li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav__links li a:hover {
+      color: #22d3ee;
+    }
+
+    .nav__search input {
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+    }
+
+    header {
+      background-image: url('https://wallpapercave.com/wp/wp2168277.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(177, 73, 73);
+      text-align: center;
+    }
+
+    .header__content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .header__content p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .product__container {
+      padding: 4rem 2rem;
+    }
+
+    .section__header {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .product__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .product__card {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .product__card img {
+      max-width: 100%;
+      height: 200px;
+      object-fit: contain;
+      margin: 1rem 0;
+    }
+
+    .product__card h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .product__card p {
+      color: #0f172a;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #0f172a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .footer__links, .footer__socials {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .footer__links a, .footer__socials a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#" class="logo">WatchZone</a>
+    <ul class="nav__links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#product">Watches</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav__search">
+      <input type="text" placeholder="Search watches..." />
+    </div>
+  </nav>
+
+  <header id="home">
+    <div class="header__content">
+      <h1>Luxury Watches for Every Moment</h1>
+      <p>Discover timeless elegance and precision-crafted watches made for modern lifestyles.</p>
+    </div>
+  </header>
+
+  <section class="product__container" id="product">
+    <h2 class="section__header">Our Collection</h2>
+    <div class="product__grid">
+      <div class="product__card">
+        <h4>Rolex Submariner</h4>
+        <p>₹99,999.00</p>
+        <img src="https://m.media-amazon.com/images/I/614qdb6zPkL._UF1000,1000_QL80_.jpg" alt="Rolex" />
+      </div>
+      <div class="product__card">
+        <h4>Omega Speedmaster</h4>
+        <p>₹74,499.00</p>
+        <img src="https://swisswatches-magazine.com/uploads/2024/12/omega-speedmaster-pilot-33210415101002-cover.webp" alt="Omega" />
+      </div>
+      <div class="product__card">
+        <h4>Tag Heuer Carrera</h4>
+        <p>₹66,000.00</p>
+        <img src="https://tagheuerindia.com/image/cache/catalog/Novelties/CBS2040.FC8318_SOLDAT_863-x-1080px_30oct2023-680x851.png" alt="Tag Heuer" />
+      </div>
+      <div class="product__card">
+        <h4>Fossil Grant</h4>
+        <p>₹21,999.00</p>
+        <img src="https://rukminim2.flixcart.com/image/750/900/xif0q/watch/d/5/z/-original-imagt7fhkn6eajmg.jpeg?q=90&crop=false" alt="Fossil" />
+      </div>
+      <div class="product__card">
+        <h4>Casio G-Shock</h4>
+        <p>₹15,499.00</p>
+        <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/G/GA/GA2/GA-2100-1A1/assets/GA-2100-1A1_Seq01.png.transform/main-visual-sp/image.png" alt="G-Shock" />
+      </div>
+      <div class="product__card">
+        <h4>Seiko Prospex</h4>
+        <p>₹28,500.00</p>
+        <img src="https://seikowatches.co.in/cdn/shop/files/SNE595P1.png?v=1744601947" alt="Seiko" />
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h2>Contact & Follow Us</h2>
+    <p>For inquiries or custom orders, reach out via social media.</p>
+    <ul class="footer__socials">
+      <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+      <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+      <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+    </ul>
+    <p style="margin-top: 1rem;">&copy; 2025 WatchZone. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Basic Scroll Animation
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".product__card").forEach((card, index) => {
+        card.style.opacity = 0;
+        card.style.transform = "translateY(50px)";
+        setTimeout(() => {
+          card.style.transition = "all 0.6s ease";
+          card.style.opacity = 1;
+          card.style.transform = "translateY(0)";
+        }, 100 * index);
+      });
+    });
+  </script>
+</body>
+</html>
